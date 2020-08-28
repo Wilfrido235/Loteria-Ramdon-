@@ -66,10 +66,6 @@ public class EjercicioRandom {
                 System.out.println("Su numero ingresado es corecto a ganado FELICIDADES");
             }
         }
-
-        {
-
-        }
     }
 }
 
