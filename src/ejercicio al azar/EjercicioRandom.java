@@ -56,7 +56,6 @@ public class EjercicioRandom {
 
         System.out.println("************** Numeros ingresados para el sorteo  **************");
         for (String valores : numeros) {
-            int numEntero = Integer.parseInt(valores);
             System.out.println(valores);
             
         }
