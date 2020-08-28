@@ -15,14 +15,14 @@ public class EjercicioRandom {
         String num = " ";
 
         int i = 0, x = 0, cantidadnumeros = numeros.length;
-    
+
         boolean salir = false, existe = false;
 
         while (i < cantidadnumeros && salir == false) {
 
             try {
                 num = JOptionPane.showInputDialog("Ingresa numeros del 1 al 10 para el sorteo ");
-                 
+
                 if (num.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Ingrese un numero ");
                 } else {
@@ -41,9 +41,9 @@ public class EjercicioRandom {
                     }
 
                     if (existe == false) {
-
                         numeros[i] = num;
                         i++;
+
                     }
 
                 }
@@ -55,18 +55,21 @@ public class EjercicioRandom {
         }
 
         System.out.println("************** Numeros ingresados para el sorteo  **************");
-        for (String valores : numeros) {
-            System.out.println(valores);
-            
-        }
         System.out.println("******El numero random es: " + ram + " ********");
-        {
-            
-            if ( ram !=num) {
-                System.out.println("el random es incorecto a perdido");
+        for (String valores : numeros) {
+            System.out.println("Numero a comprobrar: " + valores);
+            int numEntero = Integer.parseInt(valores);
+
+            if (ram != numEntero) {
+                System.out.println("Su numero ingresado es incorecto a perdido");
             } else {
-                System.out.println("el random es corecto a ganado");
+                System.out.println("Su numero ingresado es corecto a ganado FELICIDADES");
             }
+        }
+
+        {
+
         }
     }
 }
+
